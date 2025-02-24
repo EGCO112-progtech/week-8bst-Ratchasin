@@ -139,16 +139,15 @@ void postOrder(TreeNodePtr treePtr)
 } // end
 
 void printTree(TreeNodePtr treePtr, int space) {
-   if (treePtr == NULL) return;
+   if (treePtr != NULL) {
 
-   space += 5;
-   printTree(treePtr->rightPtr, space);
+
+   printTree(treePtr->rightPtr, space+1);
    
-   printf("\n");
-   for (int i = 5; i < space; i++) printf(" ");
-   printf("%d", treePtr->data);
+   for (int i = 0; i < space; i++) printf("   ");
+   printf("%d\n", treePtr->data);
    
-   printTree(treePtr->leftPtr, space);
+   printTree(treePtr->leftPtr, space+1);}
 }
 
 
