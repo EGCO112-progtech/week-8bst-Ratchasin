@@ -18,13 +18,11 @@ for ( i = 1; i < argc; ++i ) {
   printf("The postnOrder traversal is:\n" );   
   postOrder( b.root );
  
-     printf("\n");
    // traverse the tree preOrder
-   printf("\nThe preOrder traversal is:\n" );
+   printf("The preOrder traversal is:\n" );
    preOrder( b.root );
-   printf("\n");
    // traverse the tree inOrder
-   printf("\nThe inOrder traversal is:\n" );
+   printf("The inOrder traversal is:\n" );
    inOrder( b.root );
    // traverse the tree postOrder
  
